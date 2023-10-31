@@ -1,18 +1,6 @@
-import sys
-import pygame
 import numpy as np
 import random
 import copy
-import json
-import os
-
-
-#from button import *
-
-#from Game import *
-
-
-#from Board import *
 
 
 # -----------------------------------------------------------------------

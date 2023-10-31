@@ -1,15 +1,11 @@
 import sys
 import pygame
 import numpy as np
-import random
-import copy
-import json
-import os
+import player_name
 
-
-#from classes.button import *
 from classes.Game import *
-#from classes.Board import *
+
+from player_name import GameSetupUI
 
 
 # -----------------------------------------------------------------------
@@ -97,4 +93,8 @@ def main():
         game.updateScreen()
 
 
-main()
+if __name__ == "__main__":
+    game_setup_ui = GameSetupUI(main)
+    game_setup_ui.run()
+    p1, p2 = game_setup_ui.pname()
+    print(p1, p2)

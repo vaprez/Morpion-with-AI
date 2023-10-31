@@ -1,8 +1,5 @@
-import sys
 import pygame
 import numpy as np
-import random
-import copy
 import json
 import os
 from classes.Board import Board
@@ -27,6 +24,7 @@ class Game:
 
     # each time we create new object will be execute
     def __init__(self):
+        self.player1_name = ""
         self.board = Board()
         self.ai = AI()
         self.show_lines()

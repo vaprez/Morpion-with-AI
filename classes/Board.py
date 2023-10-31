@@ -1,27 +1,11 @@
 import sys
 import pygame
 import numpy as np
-import random
-import copy
-import json
-import os
 
 from classes.constants import *
 
-#from button import *
-#from AI import *
-
 from classes.Game import *
 
-
-# initialise PYGAME in the model ==> SetUp
-
-pygame.init()
-screen = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption('Mopion IA ')
-screen.fill(Bg_COLOR)
-
-header_font = pygame.font.Font(None, 30)
 
 
 # -----------------------------------------------------------------------
