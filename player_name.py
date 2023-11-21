@@ -93,12 +93,5 @@ class GameSetupUI:
         self.callback()
         return player1_name, player2_name
 
-    def pname(self):
-
-        player1_name = self.player1_entry.get()
-        player2_name = self.player2_entry.get()
-        self.callback()
-        return player1_name, player2_name
-
     def run(self):
         self.root.mainloop()

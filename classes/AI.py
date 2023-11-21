@@ -3,7 +3,6 @@ import random
 import copy
 
 
-# -----------------------------------------------------------------------
 # class AI
 
 # level : 0 ==> random IA ,
@@ -95,7 +94,3 @@ class AI:
             print('AI cannot find a valid move.')
 
         return move  # row , col
-
-
-# -----------------------------------------------------------------------
-# class GAME

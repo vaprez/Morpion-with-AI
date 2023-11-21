@@ -20,11 +20,14 @@ screen.fill(Bg_COLOR)
 header_font = pygame.font.Font(None, 30)
 
 
+# -----------------------------------------------------------------------
+# class GAME
+
+
 class Game:
 
     # each time we create new object will be execute
     def __init__(self):
-        self.player1_name = ""
         self.board = Board()
         self.ai = AI()
         self.show_lines()
@@ -249,8 +252,3 @@ class Game:
             center = (col * SQSIZE + SQSIZE // 2, (row *
                       SQSIZE + SQSIZE // 2) + HEADER_HEIGHT)  # center(x,y)
             pygame.draw.circle(screen, CIRC_COLOR, center, RADIUS, CIRC_WIDTH)
-
-
-# -----------------------------------------------------------------------
-
-#  main function

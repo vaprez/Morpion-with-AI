@@ -8,10 +8,18 @@ from classes.Game import *
 
 
 
+# initialise PYGAME in the model ==> SetUp
+
+pygame.init()
+screen = pygame.display.set_mode((WIDTH, HEIGHT))
+pygame.display.set_caption('Mopion IA ')
+screen.fill(Bg_COLOR)
+
+header_font = pygame.font.Font(None, 30)
+
+
 # -----------------------------------------------------------------------
 # class Board
-
-
 class Board:
 
     def __init__(self):
@@ -101,3 +109,4 @@ class Board:
     # is isempty  ?
     def isempty(self):
         return self.marked_sqrs == 0
+

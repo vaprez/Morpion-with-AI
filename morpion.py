@@ -96,5 +96,3 @@ def main():
 if __name__ == "__main__":
     game_setup_ui = GameSetupUI(main)
     game_setup_ui.run()
-    p1, p2 = game_setup_ui.pname()
-    print(p1, p2)
